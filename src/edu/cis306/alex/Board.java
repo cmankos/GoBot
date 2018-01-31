@@ -38,13 +38,20 @@ public class Board {
     }
 
     public Board(int p_size, int p_whitehandicap, int p_blackhandicap) {
-        board = new int[p_size][];
+        board = new int[p_size][p_size];
         whiteHandicap = p_whitehandicap;
         blackHandicap = p_blackhandicap;
+        board[3][3] = 1;
 
     }
 
-    public boolean checkValididty(int x, int y) {
+    /**
+     * MOST IMPORTANT
+     * @param x
+     * @param y
+     * @return
+     */
+    public boolean step(int x, int y) {
         System.out.println("X: " + x + " Y: " + y);
         return true;
     }
